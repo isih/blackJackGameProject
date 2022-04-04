@@ -1,3 +1,8 @@
+let playerInfo = {
+    name: "James",
+    chips: 160
+}
+
 let sum = 0
 haveJack = false
 isAlive = false
@@ -5,6 +10,9 @@ let message = ""
 let actualSum = document.getElementById("actual-sum")
 let resultVarr = document.getElementById("round-message")
 let actualCards = document.getElementById("actual-cards")
+let actualNameBalance = document.getElementById("name-balance")
+
+actualNameBalance.textContent = playerInfo.name + ": $" + playerInfo.chips
 
 aryCards = []
 
